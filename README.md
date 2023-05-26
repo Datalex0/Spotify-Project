@@ -4,7 +4,7 @@ Projet réalisé à partir de bases de données open source proposées par Spoti
 
 Hackathon réalisé en 1,5 jours en équipe de 5 personnes.
 
-![Benjamin Bannekat](SRC/logo.png) 
+![logo Disco Tech Prodigy](SRC/logo.png) 
 
 ## Sujet :
 Le sujet de notre projet est une discothèque à succès française qui souhaite se développer en franchise à l’International qui nous a donc mandaté afin de sélectionner les pays dans lesquels s’implanter.
