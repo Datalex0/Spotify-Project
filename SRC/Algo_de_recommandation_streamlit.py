@@ -7,7 +7,7 @@ from sklearn.neighbors import NearestNeighbors
 popu_400_gd = pd.read_csv("SRC/popu_400.csv", sep=",")
 popu_400_gd.set_index('title', inplace = True, drop = False )
 
-image = Image.open("SRC/logo3.png")
+image = Image.open("SRC/logo.png")
 st.image(image)
 st.title('Algo-Rythme')
 st.write('votre nouveau système de recommandation de musique dansante :sunglasses:')
