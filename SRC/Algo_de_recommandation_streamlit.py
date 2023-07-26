@@ -9,18 +9,20 @@ popu_400_gd.set_index('title', inplace = True, drop = False )
 
 image = Image.open("SRC/logo.png")
 st.image(image)
+
 st.title('Algo-Rythme')
 st.write('votre nouveau système de recommandation de musique dansante :sunglasses:')
 
-chanson = st.text_input("Quelle est votre chanson préférée ?")
+liste_chansons= popu_400_gd.index.unique()
+chanson = st.selectbox("Quelle est votre chanson préférée ?", liste_chansons)
 st.caption("Exemple : Girls Just Want to Have Fun, We've Got It Goin' On - Radio Edit, Whenever, Wherever")
 
 
 X = popu_400_gd.select_dtypes('number').drop(['rank'], axis = 1)
 
 # Création DF juste pour l'affichage des colonnes voulues
-colounes = ['artist', 'id']
-popu_a_afficher = popu_400_gd[colounes]
+columns = ['artist', 'id']
+popu_a_afficher = popu_400_gd[columns]
 # popu_a_afficher.set_index('title', inplace = True)
 prefixe = "https://open.spotify.com/track/"  # Préfixe à ajouter
 popu_a_afficher['lien spotify'] = popu_a_afficher['id'].apply(lambda x: prefixe + x)
