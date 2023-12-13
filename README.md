@@ -1,4 +1,4 @@
-# :musical_note: Spotify Project (Hackathon) :notes:
+# - :musical_note: Spotify Project (Hackathon) :notes: -
 
 Projet réalisé à partir de bases de données open source proposées par Spotify.
 
